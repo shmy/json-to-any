@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script src="../dist/json-to-any.min.js"></script>
+<body>
+  <button id="json">json</button>
+  <button id="xls">xls</button>
+  <button id="doc">doc</button>
+  <button id="csv">csv</button>
+  <button id="xml">xml</button>
+  <script>
+    json.addEventListener("click", function() {
+      jsonToAny([{
+        a: "3424",
+        b: "dsad"
+      }], "hehe", "json");
+    });
+    xls.addEventListener("click", function() {
+      jsonToAny([{
+        a: "3424",
+        b: "dsad"
+      }], "hehe", "xls");
+    });
+    doc.addEventListener("click", function() {
+      jsonToAny([{
+        a: "3424",
+        b: "dsad"
+      }], "hehe", "doc");
+    });
+    csv.addEventListener("click", function() {
+      jsonToAny([{
+        a: "3424",
+        b: "dsad"
+      }], "hehe", "csv");
+    });
+    xml.addEventListener("click", function() {
+      jsonToAny([{
+        a: "3424",
+        b: "dsad"
+      }], "hehe", "xml");
+    });
+  </script>
+</body>
+</html>
